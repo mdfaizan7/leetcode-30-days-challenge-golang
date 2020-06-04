@@ -5,6 +5,26 @@ import (
 	"leetcode-30-days-challenge/WEEK-1/packages"
 )
 
+func testEq(a, b []int) bool {
+
+	// If one is nil, the other must also be nil.
+	if (a == nil) != (b == nil) {
+		return false
+	}
+
+	if len(a) != len(b) {
+		return false
+	}
+
+	for i := range a {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+
+	return true
+}
+
 func main() {
 	// Single Number
 	fmt.Print("Testing for Single Number: ")
@@ -20,4 +40,9 @@ func main() {
 	fmt.Print("Testing for Maximum Subarray: ")
 	fmt.Print(packages.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}) == 6, " ")
 	fmt.Println(packages.MaxSubArray([]int{-2, 1, -5, 4}) == 4)
+
+	// Move Zeros
+	fmt.Print("Testing for Move Zeros: ")
+	fmt.Print(testEq(packages.MoveZeroes([]int{0, 0, 1}), []int{1, 0, 0}), " ")
+	fmt.Println(testEq(packages.MoveZeroes([]int{0, 1, 0, 3, 12}), []int{1, 3, 12, 0, 0}))
 }
