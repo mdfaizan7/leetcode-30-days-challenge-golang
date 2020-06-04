@@ -6,8 +6,6 @@ import (
 )
 
 func testEq(a, b []int) bool {
-
-	// If one is nil, the other must also be nil.
 	if (a == nil) != (b == nil) {
 		return false
 	}
@@ -45,4 +43,9 @@ func main() {
 	fmt.Print("Testing for Move Zeros: ")
 	fmt.Print(testEq(packages.MoveZeroes([]int{0, 0, 1}), []int{1, 0, 0}), " ")
 	fmt.Println(testEq(packages.MoveZeroes([]int{0, 1, 0, 3, 12}), []int{1, 3, 12, 0, 0}))
+
+	// Best Time to Buy and Sell Stock II
+	fmt.Print("Testing for Best Time to Buy and Sell Stock II: ")
+	fmt.Print(packages.MaxProfit([]int{7, 1, 5, 3, 6, 4}) == 7, " ")
+	fmt.Println(packages.MaxProfit([]int{1, 2, 3, 4, 5}) == 4)
 }
