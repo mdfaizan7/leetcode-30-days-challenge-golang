@@ -48,4 +48,9 @@ func main() {
 	fmt.Print("Testing for Best Time to Buy and Sell Stock II: ")
 	fmt.Print(packages.MaxProfit([]int{7, 1, 5, 3, 6, 4}) == 7, " ")
 	fmt.Println(packages.MaxProfit([]int{1, 2, 3, 4, 5}) == 4)
+
+	// Group Anagrams
+	fmt.Println("Testing for Group Anagrams: ")
+	fmt.Println(packages.GroupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	fmt.Println(packages.GroupAnagrams([]string{"cab", "tin", "pew", "duh", "may", "ill", "buy", "bar", "max", "doc"}))
 }
