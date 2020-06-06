@@ -9,4 +9,6 @@ func main() {
 	packages.TestMiddleNode()
 	// Backspace String Compare
 	packages.TestBackspaceCompare()
+	// Min Stack
+	packages.TestMinStack()
 }
