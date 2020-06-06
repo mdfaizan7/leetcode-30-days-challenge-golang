@@ -7,4 +7,6 @@ import (
 func main() {
 	// Middle of the Linked List
 	packages.TestMiddleNode()
+	// Backspace String Compare
+	packages.TestBackspaceCompare()
 }
