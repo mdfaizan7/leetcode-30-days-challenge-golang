@@ -11,4 +11,6 @@ func main() {
 	packages.TestBackspaceCompare()
 	// Min Stack
 	packages.TestMinStack()
+	// Diameter of Binary Tree
+	packages.TestDiameterOfBinaryTree()
 }
