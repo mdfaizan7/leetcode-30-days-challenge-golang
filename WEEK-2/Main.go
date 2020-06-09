@@ -13,4 +13,6 @@ func main() {
 	packages.TestMinStack()
 	// Diameter of Binary Tree
 	packages.TestDiameterOfBinaryTree()
+	// Last Stone Weight
+	packages.TestLastStoneWeight()
 }
