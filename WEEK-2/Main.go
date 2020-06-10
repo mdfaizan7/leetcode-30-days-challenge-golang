@@ -15,4 +15,6 @@ func main() {
 	packages.TestDiameterOfBinaryTree()
 	// Last Stone Weight
 	packages.TestLastStoneWeight()
+	// Contagiuos Array
+	packages.TestContigiousArray()
 }
