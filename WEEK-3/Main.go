@@ -7,4 +7,5 @@ func main() {
 	packages.TestValidString()
 	packages.TestNumIslands()
 	packages.TestMinPathSum()
+	packages.TestRotatedArraySearch()
 }
