@@ -6,4 +6,5 @@ func main() {
 	packages.TestProductExceptSlef()
 	packages.TestValidString()
 	packages.TestNumIslands()
+	packages.TestMinPathSum()
 }
