@@ -8,4 +8,5 @@ func main() {
 	packages.TestNumIslands()
 	packages.TestMinPathSum()
 	packages.TestRotatedArraySearch()
+	packages.TestBstFromPreorder()
 }
